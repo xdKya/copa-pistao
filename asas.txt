@@ -1,0 +1,9 @@
+getDistance(){
+    var playerdistanceref = database.ref("players/player"+this.index);
+    playerdistanceref.on("value",(data)=>{
+      var data = data.val();
+      this.positionX = data.positionX;
+      this.positionY = data.positionY;
+
+    })
+  }
