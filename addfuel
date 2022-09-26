@@ -1,0 +1,20 @@
+addFuel(index) {
+    //adicionando combustível
+    cars[index - 1].overlap(fuel, function(collector, collected) {
+      player.fuel = 200;
+      //o sprite é coletado no grupo de colecionáveis que desencadeou
+      //o evento
+      collected.remove();
+    });
+
+  }
+  
+addCoins(index) {
+    cars[index - 1].overlap(coin, function(collector, collected) {
+      player.score += 20
+      player.update();
+      //o sprite é coletado no grupo de colecionáveis que desencadeou
+      //o evento
+      collected.remove();
+    });
+  }
