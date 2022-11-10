@@ -1,3 +1,14 @@
+this.title.html("Placar");
+    this.title.class("resetText");
+    this.title.position(width / 3 - 60, 40);
+
+    this.leader1.class("leadersText");
+    this.leader1.position(width / 3 - 50, 80);
+
+    this.leader2.class("leadersText");
+    this.leader2.position(width / 3 - 50, 130);
+
+
 showLeaderboard() {
     var leader1, leader2;
     var players = Object.values(allPlayers);
