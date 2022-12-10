@@ -15,6 +15,9 @@ this.leaderTittle.html("Placar");
     this.leader2.position(width / 3 - 50, 130);
 
 
+
+//se o player 1 ganhar o jogo ele fica em primeiro lugar na tela
+//se o player 2 ganhar o jogo ele fica em primeiro lugar na tela
 showLeaderboard() {
     var leader1, leader2;
     var players = Object.values(allPlayers);
