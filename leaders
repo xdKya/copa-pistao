@@ -1,6 +1,12 @@
-this.title.html("Placar");
-    this.title.class("resetText");
-    this.title.position(width / 3 - 60, 40);
+
+form.hide();
+    form.titleImg.position(40, 50);
+    form.titleImg.class("gameTitleAfterEffect");
+
+
+this.leaderTittle.html("Placar");
+   this.leaderTittle.class("resetText");
+    this.leaderTittle.position(width / 3 - 60, 50);
 
     this.leader1.class("leadersText");
     this.leader1.position(width / 3 - 50, 80);
