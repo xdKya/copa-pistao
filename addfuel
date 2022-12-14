@@ -1,7 +1,7 @@
-addFuel(index) {
+addGasolinas(index) {
     //adicionando combustível
-    cars[index - 1].overlap(fuel, function(collector, collected) {
-      player.fuel = 200;
+    carros[index - 1].overlap(gasolinas, function(collector, collected) {
+      player.gasolina = 200;
       //o sprite é coletado no grupo de colecionáveis que desencadeou
       //o evento
       collected.remove();
@@ -9,8 +9,8 @@ addFuel(index) {
 
   }
   
-addCoins(index) {
-    cars[index - 1].overlap(coin, function(collector, collected) {
+addMoedas(index) {
+    carros[index - 1].overlap(moedas, function(collector, collected) {
       player.score += 20
       player.update();
       //o sprite é coletado no grupo de colecionáveis que desencadeou
