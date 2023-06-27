@@ -1,14 +1,3 @@
-  showLife() {
-    push();
-    image(life, width / 2 - 130, height - player.positionY - 400, 20, 20);
-    fill("white");
-    rect(width / 2 - 100, height - player.positionY - 400, 200, 20);
-    fill("#f50057");
-    rect(width / 2 - 100, height - player.positionY - 400, player.life, 20);
-    noStroke();
-    pop();
-  }
-
   showFuelBar() {
     push();
     image(fuelimg, width / 2 - 130, height - player.positionY - 350, 20, 20);
